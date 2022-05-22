@@ -9,12 +9,12 @@ module.exports = {
     module: {
       rules : [
         {
-          test: /\.js$/,
+          test: /\.(js|jsx|tsx|ts)$/,
           exclude: /node_modules/,
           use: {
             loader: "babel-loader",
             options: {
-              configFile:"./configs/babel.config.json"
+              configFile:"./config/babel.config.json"
             }
           }
         },
@@ -24,5 +24,8 @@ module.exports = {
         }
       ]
     },
-  plugins: [htmlPlugin]
+  plugins: [htmlPlugin],
+  resolve: {
+    extensions: ['.js', '.jsx', '.tsx', '.ts'],
+  }
 };
