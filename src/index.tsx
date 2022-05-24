@@ -1,4 +1,4 @@
-import * as ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import * as React from 'react';
 
 const App = () => {
@@ -6,5 +6,7 @@ const App = () => {
   return <h1>{`Welcome to ${app_name.toUpperCase()}!`}</h1>;
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+const container =  document.getElementById('app');
+const root = createRoot(container);
+root.render(<App />);
 
