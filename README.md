@@ -4,3 +4,4 @@ My attempt at configuring a react app from scratch.
 - Run `npm install` to install the required libraries
   - Then you can use `npm run dev` to run serve a copy of your app to `localhost:8080` as you develop
 - Run `npm run build` to build the project for your production.
+- Make sure to change your project name in `package.json` and add your own title in the `index.html`!
